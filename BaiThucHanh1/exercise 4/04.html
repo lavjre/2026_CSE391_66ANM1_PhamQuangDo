@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Information Form</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <table border="0" cellpadding="8" cellspacing="0" width="500">
+            <tr>
+                <td colspan="2">
+                    <b>Basic Info</b>
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td width="150"><b>Employee ID</b></td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td><b>Last Name</b></td>
+                <td>Dodsworth</td>
+            </tr>
+            <tr>
+                <td><b>First Name</b></td>
+                <td>
+                    <input type="text" name="firstname" value="Anne" size="50"> ⓘ
+                </td>
+            </tr>
+            <tr>
+                <td valign="top"><b>Gender</b></td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male<br>
+                    <input type="radio" name="gender" value="female"> Female<br>
+                    <input type="radio" name="gender" value="other"> Other<br>
+                    <input type="radio" name="gender" value="zzz" checked> ZZZ
+                </td>
+            </tr>
+            <tr>
+                <td><b>Title</b></td>
+                <td><input type="text" name="title" value="Sales Representative" size="50"></td>
+            </tr>
+            <tr>
+                <td><b>Suffix</b></td>
+                <td><input type="text" name="suffix" value="Ms." size="50"></td>
+            </tr>
+            <tr>
+                <td><b>BirthDate</b></td>
+                <td>
+                    <input type="datetime-local" name="birthdate" value="1969-07-02T00:00:00" size="50"> ⓘ
+                </td>
+            </tr>
+            <tr>
+                <td><b>HireDate</b></td>
+                <td><input type="datetime-local" name="hiredate" value="1994-11-15T00:00:00" size="50"></td>
+            </tr>
+            <tr>
+                <td><b>SSN # (if applicable)</b></td>
+                <td>
+                    <input type="text" name="ssn" value="" size="50"> ⓘ
+                </td>
+            </tr>
+            <tr>
+                <td><b>Reports To</b></td>
+                <td>
+                    <input type="text" name="reportsto" value="Buchanan" size="20" list="reports-list"> ↕
+                    <datalist id="reports-list">
+                        <option value="Buchanan">
+                    </datalist>
+                </td>
+            </tr>
+           
+            <tr>
+                <td colspan="2">
+                    <br>
+                    <b>Contact Info</b>
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Email</b></td>
+                <td><input type="text" name="email" placeholder="name@example.com" size="50"></td>
+            </tr>
+            <tr>
+                <td><b>Address</b></td>
+                <td><input type="text" name="address" value="7 Houndstooth Rd." size="50"></td>
+            </tr>
+            <tr>
+                <td><b>City</b></td>
+                <td><input type="text" name="city" value="London" size="50"></td>
+            </tr>
+            <tr>
+                <td><b>Region</b></td>
+                <td><input type="text" name="region" value="" size="50"></td>
+            </tr>
+            <tr>
+                <td><b>Postal Code</b></td>
+                <td><input type="text" name="postalcode" value="WG2 7LT" size="50"></td>
+            </tr>
+            <tr>
+                <td><b>Country</b></td>
+                <td>
+                    <input type="text" name="country" value="Russian Federation" size="20" list="country-list"> ↕
+                    <datalist id="country-list">
+                        <option value="Russian Federation">
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td><b>US Home Phone</b></td>
+                <td><input type="text" name="homephone" value="(234)234-2342" size="50"></td>
+            </tr>
+            <tr>
+                <td><b>Photo</b></td>
+                <td><input type="text" name="photo" value="EmpID9.bmp" size="50"></td>
+            </tr>
+           
+            <tr>
+                <td colspan="2">
+                    <br>
+                    <b>Optional Info</b>
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top"><b>Notes</b></td>
+                <td>
+                    <table border="1" cellpadding="5" cellspacing="0" width="100%">
+                        <tr>
+                            <td bgcolor="#f0f0f0">
+                                <b>B</b> <i>I</i> <s>S</s> <u>U</u> | | H1 H2 H3 <font color="red">x</font> | ≡ ≡ ≡ ≡ | <sub>x</sub> <sup>x^2</sup> <font color="green">↺ ↻</font> | ≡ ≡ | ⬜ 🎨 | 🔤 | 14 10 | ⬜
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="notes" rows="5" cols="55">Anne has a BA degree in English from St. Lawrence College. She is fluent in French and German.ZZZ</textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top"><b>Preferred Shift</b></td>
+                <td>
+                    <input type="checkbox" name="shift" value="regular"> Regular<br>
+                    <input type="checkbox" name="gravyyard" checked> Gravy Yard
+                </td>
+            </tr>
+            <tr>
+                <td><b>Active?</b></td>
+                <td><input type="checkbox" name="active" checked></td>
+            </tr>
+            <tr>
+                <td valign="top"><b>Are you human?</b></td>
+                <td>
+                    <table border="0" cellpadding="3" cellspacing="0">
+                        <tr>
+                            <td>
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td><b>Z</b></td>
+                                        <td width="5"></td>
+                                        <td><b>E</b></td>
+                                        <td width="5"></td>
+                                        <td><b>D</b></td>
+                                        <td width="5"></td>
+                                        <td><b>A</b></td>
+                                        <td width="5"></td>
+                                        <td><b>L</b></td>
+                                        <td width="5"></td>
+                                        <td><b>O</b></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><font size="2" color="blue"><u>Click to change</u></font></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="captcha" size="50"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           
+            <tr>
+                <td colspan="2">
+                    <br>
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                            <td align="left">
+                                <button type="button" bgcolor="#444444">◄</button>
+                                <button type="button" bgcolor="#444444">►</button>
+                            </td>
+                            <td align="right">
+                                <button type="submit" bgcolor="#444444">✉ Submit</button>
+                                <button type="button" bgcolor="#444444">✖ Cancel</button>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <font size="2">* required</font>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
