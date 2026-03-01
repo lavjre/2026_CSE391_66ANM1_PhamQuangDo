@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+.page-wrap {
+  padding: 12px 15px 0 15px;
+}
+
+.contact-box {
+  padding: 24px 21px 26px 21px;
+  background: #fff;
+  min-height: 500px;
+  border: 2px solid #2f2f2f;
+}
+
+.form-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #4b4b4b;
+  margin-bottom: 22px;
+}
+
+.custom-input {
+  height: 40px;
+  border: 1px solid #d9d9d9;
+  border-radius: 0;
+  box-shadow: none !important;
+  font-size: 14px;
+  color: #666;
+  padding-left: 18px;
+}
+
+.custom-textarea {
+  height: 250px;
+  border: 1px solid #d9d9d9;
+  border-radius: 0;
+  box-shadow: none !important;
+  font-size: 14px;
+  color: #666;
+  padding: 12px 18px;
+  resize: both;
+}
+
+.custom-input::placeholder,
+.custom-textarea::placeholder {
+  color: #a9a9a9;
+  opacity: 1;
+}
+
+.custom-input:focus,
+.custom-textarea:focus {
+  border-color: #cfcfcf;
+}
+
+/* Nút xanh */
+.send-btn {
+  background-color: #6fc1ef !important;
+  border: 1px solid #57b3e6 !important;
+  color: white !important;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 10px 22px;
+  min-width: 125px;
+  box-shadow: none !important;
+}
+
+.send-btn:hover,
+.send-btn:focus,
+.send-btn:active {
+  background-color: #63bbea !important;
+  border-color: #57b3e6 !important;
+  color: rgb(43, 168, 239) !important;
+}
+
+.note-text {
+  font-size: 14px;
+  color: #777;
+  text-align: right;
+  white-space: nowrap;
+  margin-right: 8px;
+}
+
+.bottom-row {
+  margin-top: 10px;
+}
