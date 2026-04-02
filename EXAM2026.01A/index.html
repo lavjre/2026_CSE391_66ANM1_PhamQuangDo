@@ -1,0 +1,42 @@
+cl<!DOCTYPE html>
+<html lang="vi">
+  <!--
+    ============================================================
+    index.html — File HTML gốc duy nhất (Single Page Application)
+    ============================================================
+    Trong React SPA (Single Page Application):
+    - Chỉ có 1 file HTML duy nhất này
+    - Toàn bộ nội dung được React render vào thẻ <div id="root">
+    - Khi người dùng điều hướng, React thay đổi DOM (không load lại trang)
+    ============================================================
+  -->
+  <head>
+    <meta charset="UTF-8" />
+
+    <!--
+      viewport meta: Bắt buộc cho responsive design
+      width=device-width  → Chiều rộng = chiều rộng màn hình thiết bị
+      initial-scale=1.0   → Không zoom mặc định trên mobile
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon hiển thị trên tab trình duyệt -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <title>Quản lý Sinh viên</title>
+  </head>
+  <body>
+    <!--
+      #root: Điểm mount của toàn bộ ứng dụng React
+      React sẽ tìm element này và render App component vào đây
+      (Xem src/main.jsx để hiểu cách mount)
+    -->
+    <div id="root"></div>
+
+    <!--
+      type="module": Cho phép dùng ES Modules (import/export)
+      Vite sẽ xử lý file này và tự động bundle các dependencies
+    -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
